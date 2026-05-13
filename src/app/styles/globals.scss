@@ -1,0 +1,129 @@
+@import 'normalize.css';
+@import 'theme.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  min-width: 340px;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--bg-color);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+
+  &.ReactModal__Body--open {
+    overflow: hidden;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+main {
+  margin-top: 90px;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+
+  &:focus {
+    appearance: none;
+    -moz-appearance: none;
+  }
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button,
+textarea {
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  background-color: var(--gray-middle);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+input,
+button,
+a,
+li,
+svg,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transition: all 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.container {
+  max-width: 1368px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  main {
+    margin-top: 68px;
+  }
+
+  .section {
+    padding: 34px 0;
+  }
+}

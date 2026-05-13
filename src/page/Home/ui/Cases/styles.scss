@@ -1,0 +1,12 @@
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+}

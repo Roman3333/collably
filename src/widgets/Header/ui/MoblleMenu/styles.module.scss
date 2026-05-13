@@ -1,0 +1,83 @@
+.btn,
+.wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    display: flex;
+  }
+
+  .wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 64px 20px;
+    z-index: 150;
+    transition: all 0.5s;
+    transform: translateX(101%);
+    background: var(--bg-color);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    &.active {
+      transform: translateX(0%);
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .link {
+    font-weight: 600;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+
+  .cross {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .btns {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .btnForm {
+    width: 100%;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 16px;
+  }
+
+  .formLink,
+  .linkTg {
+    display: flex;
+  }
+
+  .formLink {
+    width: 100%;
+  }
+
+  .linkTg {
+    color: var(--blue);
+
+    &:hover {
+      color: var(--blue-hover);
+      transform: translateY(-1px);
+    }
+  }
+}

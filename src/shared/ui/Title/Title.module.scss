@@ -1,0 +1,24 @@
+.title {
+  letter-spacing: -0.045em;
+}
+
+.primary {
+  color: var(--black);
+}
+
+.secondary {
+  color: var(--white);
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.italic {
+  font-family: var(--font-inter-italic);
+  font-style: italic;
+}

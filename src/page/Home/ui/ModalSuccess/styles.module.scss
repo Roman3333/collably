@@ -1,0 +1,33 @@
+.text {
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.imgMobile {
+  display: none;
+}
+
+.imgPc {
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  .imgMobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .imgPc {
+    display: none;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

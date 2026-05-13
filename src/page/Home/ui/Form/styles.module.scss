@@ -1,0 +1,125 @@
+.section {
+  padding: 56px 0;
+}
+
+.wrapper {
+  padding: 50px 28px 28px;
+  background: var(--blue);
+  border-radius: 36px;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.suptitle {
+  margin: 23px 0;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.002em;
+  color: var(--white);
+  position: relative;
+  z-index: 10;
+  opacity: 0.85;
+}
+
+.top,
+.bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom {
+  margin-top: 30px;
+}
+
+.checkbox {
+  margin: 38px 0;
+}
+
+.btn {
+  width: 100%;
+  height: 110px;
+}
+
+.ornament {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.eclipse1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eclipse2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mobileBreak {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .ornament {
+    display: none;
+  }
+}
+
+@media (max-width: 876px) {
+  .top,
+  .bottom {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 34px 0;
+  }
+
+  .wrapper {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .suptitle {
+    margin: 14px 0 26px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .checkbox {
+    margin: 26px 0;
+  }
+
+  .btn {
+    height: 66px;
+  }
+
+  .eclipse1 {
+    width: 650px;
+    height: 336px;
+  }
+
+  .eclipse2 {
+    width: 420px;
+    height: 266px;
+  }
+}
