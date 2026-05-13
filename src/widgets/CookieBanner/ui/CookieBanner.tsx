@@ -33,7 +33,7 @@ export const CookieBanner = () => {
       </p>
 
       <div className={styles.btns}>
-        <Button className={styles.btn} variant="orange" onClick={acceptCookies}>
+        <Button className={styles.btn} onClick={acceptCookies}>
           Принять
         </Button>
         <Link href="/privacy-police/" className={styles.link}>
