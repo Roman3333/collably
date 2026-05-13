@@ -52,10 +52,20 @@ export const Cases = () => {
 
           <div className={styles.btns}>
             <button className="swiper-button-prev">
-              <Arrow className={styles.arrow} width={24} height={24} />
+              <Arrow
+                className={styles.arrow}
+                width={24}
+                height={24}
+                color="var(--black)"
+              />
             </button>
             <button className="swiper-button-next">
-              <Arrow className={styles.arrow} width={24} height={24} />
+              <Arrow
+                className={styles.arrow}
+                width={24}
+                height={24}
+                color="var(--black)"
+              />
             </button>
           </div>
         </div>

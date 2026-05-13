@@ -8,7 +8,7 @@
 
 .slide {
   width: fit-content !important;
-  transform: translateY(calc(var(--index) * -12px));
+  transform: translateY(calc(var(--index) * -12px)) !important;
   transition: all 1s;
 }
 
@@ -135,7 +135,7 @@
 
   .slide {
     width: 208px !important;
-    transform: translateY(calc(var(--index) * -20px * 1));
+    transform: translateY(calc(var(--index) * -20px * 1)) !important;
   }
 
   .bottom {

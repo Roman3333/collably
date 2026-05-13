@@ -63,7 +63,12 @@ export const Faq = () => {
               </div>
 
               <button className={styles.btn}>
-                <Chevron className={styles.arrow} width={24} height={24} />
+                <Chevron
+                  className={styles.arrow}
+                  width={24}
+                  height={24}
+                  color="var(--black)"
+                />
               </button>
             </div>
           ))}

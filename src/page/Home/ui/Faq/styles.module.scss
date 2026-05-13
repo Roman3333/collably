@@ -16,6 +16,7 @@
   align-items: center;
   gap: 16px;
   border-top: 1px solid var(--neutral-gray);
+  transition: all 0.3s;
 
   &:last-of-type {
     border-bottom: 1px solid var(--neutral-gray);
