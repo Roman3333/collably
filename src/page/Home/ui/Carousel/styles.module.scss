@@ -1,8 +1,8 @@
 .section {
-  padding-bottom: 70px;
+  padding: 100px 0 70px;
 }
 
-.swiper {
+/* .swiper {
   padding: 168px 0 100px;
 }
 
@@ -17,7 +17,7 @@
   border-radius: 28px;
   transform: rotate(-3deg);
   user-select: none;
-}
+} */
 
 .title {
   font-size: 85px;
@@ -105,8 +105,12 @@
 }
 
 @media (max-width: 768px) {
-  .swiper {
+  /* .swiper {
     padding: 80px 0 86px;
+  } */
+
+  .section {
+    padding: 60px 0 34px;
   }
 
   .title {
@@ -126,7 +130,7 @@
     line-height: 16px;
   }
 
-  .img {
+  /* .img {
     width: 208px;
     height: 138px;
     border-radius: 22px;
@@ -136,7 +140,7 @@
   .slide {
     width: 208px !important;
     transform: translateY(calc(var(--index) * -20px * 1)) !important;
-  }
+  } */
 
   .bottom {
     gap: 30px;

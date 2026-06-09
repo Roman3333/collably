@@ -6,8 +6,8 @@ import { Navigation } from 'swiper/modules';
 import clsx from 'clsx';
 import { Title } from '@/shared/ui';
 import Arrow from '@/svg/chevron-right.svg';
-import Rating from '@/svg/rating.svg';
 import styles from './styles.module.scss';
+import 'swiper/css';
 import './styles.scss';
 
 const items = [
@@ -27,19 +27,14 @@ const items = [
     img: '/img/case-3.webp',
   },
   {
-    title: 'Сеть магазинов цветов',
-    text: 'Рост заказов на 8 марта',
-    img: '/img/case-1.webp',
+    title: 'Производитель снэков',
+    text: 'Охват и покупки',
+    img: '/img/case-4.webp',
   },
   {
-    title: 'Сеть автосервисов',
-    text: 'Бренд-запросы и охваты по регионам',
-    img: '/img/case-2.webp',
-  },
-  {
-    title: 'Streetwear‑бренд одежды',
-    text: 'Прирост подписчиков + трафик',
-    img: '/img/case-3.webp',
+    title: 'Производитель БАДов',
+    text: 'Работа с экспертами и рост конверсии',
+    img: '/img/case-5.webp',
   },
 ];
 
@@ -98,11 +93,13 @@ export const Cases = () => {
 
                 <div className={styles.content}>
                   <div className={styles.client}>Клиент:</div>
+
                   <Title className={styles.itemTitle} type="h4" weight="medium">
                     {title}
                   </Title>
+
                   <div className={styles.line} />
-                  <Rating className={styles.rating} width={50} height={50} />
+
                   <p className={styles.text}>{text}</p>
                 </div>
               </div>

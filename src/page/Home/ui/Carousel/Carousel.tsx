@@ -1,35 +1,36 @@
-'use client';
+// 'use client';
 
-import { useState } from 'react';
+// import { useState } from 'react';
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 import { Title, Button } from '@/shared/ui';
-import 'swiper/css';
+// import 'swiper/css';
 import styles from './styles.module.scss';
 import Link from 'next/link';
 
-const items = [
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-  '/img/test-1.jpg',
-];
+// const items = [
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+//   '/img/test-1.jpg',
+// ];
 
 export const Carousel = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section id="services" className={styles.section}>
       <div className="container">
-        <Swiper
+        {/* сказали убрать слайдер с видео */}
+        {/* <Swiper
           spaceBetween={12}
           slidesPerView="auto"
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -54,7 +55,7 @@ export const Carousel = () => {
               </SwiperSlide>
             );
           })}
-        </Swiper>
+        </Swiper> */}
 
         <Title type="h1" className={styles.title}>
           <div className={styles.top}>

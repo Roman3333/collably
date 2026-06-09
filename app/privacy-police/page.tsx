@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    url: 'https://collably.netlify.app/',
+    url: 'https://colably.netlify.app/',
   },
 };
 
